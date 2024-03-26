@@ -1,0 +1,10 @@
+.error {
+	display:none;
+	font-size: 0.8em;
+	position: absolute;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown)~.error{
+	display: block;
+	color: red;
+}
